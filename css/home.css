@@ -1,0 +1,163 @@
+.img-titulo {
+  display: flex;
+  width: 100%;
+  height: 450px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets_reginaldo/foto-home-2.png);
+  background-size: cover;
+  background-position: center;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+
+  border-top: 5px solid #bbc628;
+  border-bottom: 5px solid #bbc628;
+}
+
+.container-home {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+.img-titulo h1 {
+  font-size: 5.5rem;
+  font-weight: 600;
+}
+
+.home-quem-somos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1100px;
+}
+
+.home-quem-somos p {
+  font-size: 25px;
+  margin-bottom: 0px;
+}
+
+.title-quem-somos {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  align-content: space-between;
+}
+
+.title-quem-somos h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.title-quem-somos button {
+  padding: 5px 30px 5px 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+  background-color: #8b0000;
+  color: #dfc571;
+  justify-self: center;
+}
+
+.title-quem-somos button:hover,
+.home-produtos button:hover {
+  cursor: pointer;
+  background-color: #a30f0f;
+}
+
+/* Seção produtos home */
+
+.home-produtos {
+  margin-bottom: 100px;
+}
+
+.home-produtos h1 {
+  font-size: 45px;
+  color: #8b0000;
+  text-align: center;
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  max-width: 1100px;
+}
+
+.produtos img {
+  width: 250px;
+  height: 200px;
+  margin: 0px;
+  padding: 0px;
+  border-start-start-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.produtos p {
+  text-align: center;
+  background-color: #ffe4e1;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-end-end-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.home-produtos button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  background-color: #8b0000;
+  border-radius: 5px;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 5px 15px 5px 15px;
+  color: #dfc571;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-produtos button img {
+  width: 24px;
+}
+
+/* Seção parceiros home */
+
+.home-parceiros {
+  margin-bottom: 100px;
+}
+
+.home-parceiros h1 {
+  font-size: 45px;
+  color: #8b0000;
+  text-align: center;
+}
+
+.home-parceiros p {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.parceiros {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-items: center;
+  align-items: center;
+  row-gap: 30px;
+  position: relative;
+}
+
+.parceiros img {
+  width: 300px;
+  position: relative;
+}
