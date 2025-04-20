@@ -44,7 +44,6 @@ function recebeDados(div, dados) {
   const nomeProduto = div.querySelector("h3").innerText;
   const precoProduto = +div.querySelector(".preco").innerText.replace(",", ".");
   const areaProdutos = document.querySelector(".produtos-selecionados");
-  const button = div.querySelector('[data-button="add"]');
 
   const info = div.dataset.cod;
   const elementoExistente = document.querySelector(`div[data-id="${info}"]`);
@@ -105,20 +104,50 @@ function verificaErro() {
   const paraCheckErro = document.querySelector(".ativo-erro-input");
   newPara.style.color = "red";
 
+  let erro = false;
+
   if (!radioButton.checked) {
     newPara.innerText = "Selecione a opção de retirada antes de enviar";
     newPara.classList.add("ativo-erro-check");
     if (!paraCheckErro) fielNewErroCheck.appendChild(newPara);
+    erro = true;
   } else {
-    paraCheckErro.remove();
+    if (paraCheckErro) paraCheckErro.remove();
   }
 
-  // verifica se está vazio o campo input
   if (inputNome.value === "") {
     newPara.innerText = "Preencha corretamente o campo!";
     newPara.classList.add("ativo-erro-input");
     if (!paraInputErro) fieldNewErroInput.appendChild(newPara);
+    erro = true;
   } else {
-    paraInputErro.remove();
+    if (paraInputErro) paraInputErro.remove();
   }
+
+  if (!erro) {
+    enviarPedidoWhatsapp();
+  }
+}
+
+function enviarPedidoWhatsapp() {
+  const numeroWhatsapp = "5516997119773"; // Número da empresa
+  const nomeCliente = document.getElementById("nome").value;
+  const tipoRetirada = document.querySelector("[type='radio']:checked").value;
+  const produtosSelecionados = document.querySelectorAll(".produtos-selecionados div");
+
+  if (produtosSelecionados.length === 0) {
+    alert("Selecione ao menos um produto antes de enviar o pedido.");
+    return;
+  }
+
+  let mensagem = `Olá, meu nome é ${nomeCliente} e gostaria de fazer um pedido:\n\n`;
+
+  produtosSelecionados.forEach((item) => {
+    mensagem += `- ${item.innerText}\n`;
+  });
+
+  mensagem += `\nForma de retirada: ${tipoRetirada}`;
+
+  const link = `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(mensagem)}`;
+  window.open(link, "_blank");
 }
