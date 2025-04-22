@@ -1,0 +1,152 @@
+#formulario {
+  margin-top: 50px;
+  max-width: 620px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.titulo-form {
+  color: #8b0000;
+  margin-bottom: 40px;
+  width: 60%;
+  text-align: center;
+  justify-self: center;
+  font-size: 30px;
+}
+
+#formulario > label {
+  display: block;
+  /* font-weight: bold; */
+  font-size: 1.15rem;
+  margin-bottom: 5px;
+}
+
+#formulario > input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  background-color: #d9d9d9;
+  outline: none;
+  border: none;
+}
+
+.entrega {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  padding: 5px;
+}
+
+.entrega::after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  right: 0;
+  box-sizing: border-box;
+}
+
+.entrega label {
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.entrega input {
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.informa-retirada {
+  display: none;
+  align-items: center;
+  gap: 10px;
+}
+
+.informa-retirada img {
+  width: 20px;
+  margin-top: 5px;
+}
+
+.informa-retirada.ativo {
+  display: flex;
+}
+
+.produtos-selecionados {
+  max-width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+}
+
+.produtos-selecionados div,
+.produtos-selecionados h2 {
+  margin-bottom: 10px;
+}
+
+#formulario > button {
+  background-color: #8b0000;
+  color: #dfc571;
+  justify-self: center;
+  padding: 10px 22px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+#formulario > button:hover {
+  cursor: pointer;
+  background-color: #943535;
+}
+
+.info-radio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.pagamento {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  padding: 5px 5px 5px 15px;
+}
+
+.pagamento label {
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.pagamento input {
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+label img {
+  width: 30px;
+  padding-left: 10px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

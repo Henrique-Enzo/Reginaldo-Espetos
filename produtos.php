@@ -15,22 +15,12 @@
 </head>
 
 <body>
-  <header>
-    <div class="menu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="produtos.html">Produtos</a></li>
-        <li><a href="index.html"><img src="assets_reginaldo/logo_oficial_reginaldo_espetos.jpg"
-              alt="Escudo dourado com garfos cruzados vermelhos centralizado inferiormente ao escudo com as iniciais R e E" /></a>
-        </li>
-        <li><a href="quemSomos.html">Quem somos</a></li>
-        <li><a href="contatos.html">Contatos</a></li>
-      </ul>
-    </div>
-    <div class="titulo">
-      <h1>Produtos</h1>
-    </div>
-  </header>
+  <?php 
+include_once('./inc/header.php')
+?>
+  <div class="titulo">
+    <h1>Produtos</h1>
+  </div>
   <main>
     <h2 class="titulo-produto">Nossos Espetos</h2>
     <section id="produtos" class="container">
@@ -49,6 +39,39 @@
         <div class="img"></div>
         <h3>Bolinha Quibe c/ Queijo e Bacon</h3>
         <p>Pacote c/ 4 un: R$<span class="preco">18,00</span></p>
+        <button data-button="add">Adicionar</button>
+        <div class="btn-number">
+          <button class="minus">-</button>
+          <input type="number" min="0" max="100" value="0" />
+          <button class="plus">+</button>
+        </div>
+      </div>
+      <div data-cod="8">
+        <div class="img"></div>
+        <h3 class="nome">Coração</h3>
+        <p>Pacote c/ 5 un: R$<span class="preco">25,00</span></p>
+        <button data-button="add">Adicionar</button>
+        <div class="btn-number">
+          <button class="minus">-</button>
+          <input type="number" min="0" max="100" value="0" />
+          <button class="plus">+</button>
+        </div>
+      </div>
+      <div data-cod="6">
+        <div class="img"></div>
+        <h3>Filé de Frango</h3>
+        <p>Pacote c/ 5 un: R$<span class="preco">17,50</span></p>
+        <button data-button="add">Adicionar</button>
+        <div class="btn-number">
+          <button class="minus">-</button>
+          <input type="number" min="0" max="100" value="0" />
+          <button class="plus">+</button>
+        </div>
+      </div>
+      <div data-cod="5">
+        <div class="img"></div>
+        <h3>Kafta Tradicional</h3>
+        <p>Pacote c/ 6 un: R$<span class="preco">20,40</span></p>
         <button data-button="add">Adicionar</button>
         <div class="btn-number">
           <button class="minus">-</button>
@@ -78,32 +101,10 @@
           <button class="plus">+</button>
         </div>
       </div>
-      <div data-cod="5">
-        <div class="img"></div>
-        <h3>Kafta Tradicional</h3>
-        <p>Pacote c/ 6 un: R$<span class="preco">20,40</span></p>
-        <button data-button="add">Adicionar</button>
-        <div class="btn-number">
-          <button class="minus">-</button>
-          <input type="number" min="0" max="100" value="0" />
-          <button class="plus">+</button>
-        </div>
-      </div>
-      <div data-cod="6">
-        <div class="img"></div>
-        <h3>Filé de Frango</h3>
-        <p>Pacote c/ 5 un: R$<span class="preco">17,50</span></p>
-        <button data-button="add">Adicionar</button>
-        <div class="btn-number">
-          <button class="minus">-</button>
-          <input type="number" min="0" max="100" value="0" />
-          <button class="plus">+</button>
-        </div>
-      </div>
       <div data-cod="7">
         <div class="img"></div>
-        <h3>Kaftão de Carne c/ Queijo</h3>
-        <p>Pacote c/ 4 un: R$<span class="preco">20,00</span></p>
+        <h3>Pão de Alho General</h3>
+        <p>Pacote c/ 5 un: R$<span class="preco">11,00</span></p>
         <button data-button="add">Adicionar</button>
         <div class="btn-number">
           <button class="minus">-</button>
@@ -111,21 +112,10 @@
           <button class="plus">+</button>
         </div>
       </div>
-      <div data-cod="8">
+      <div data-cod="12">
         <div class="img"></div>
-        <h3 class="nome">Coração</h3>
-        <p>Pacote c/ 5 un: R$<span class="preco">25,00</span></p>
-        <button data-button="add">Adicionar</button>
-        <div class="btn-number">
-          <button class="minus">-</button>
-          <input type="number" min="0" max="100" value="0" />
-          <button class="plus">+</button>
-        </div>
-      </div>
-      <div data-cod="9">
-        <div class="img"></div>
-        <h3>Panceta</h3>
-        <p>Pacote c/ 5 un: R$<span class="preco">17,50</span></p>
+        <h3 class="nome">Kibão c/ Queijo</h3>
+        <p>Pacote c/ 4 un: R$<span class="preco">18,00</span></p>
         <button data-button="add">Adicionar</button>
         <div class="btn-number">
           <button class="minus">-</button>
@@ -155,10 +145,10 @@
           <button class="plus">+</button>
         </div>
       </div>
-      <div data-cod="12">
+      <div data-cod="13">
         <div class="img"></div>
-        <h3 class="nome">Kibão c/ Queijo</h3>
-        <p>Pacote c/ 4 un: R$<span class="preco">18,00</span></p>
+        <h3>Medalhão de Frango</h3>
+        <p>Pacote KG c/ 4 un: R$<span class="preco">35,90</span></p>
         <button data-button="add">Adicionar</button>
         <div class="btn-number">
           <button class="minus">-</button>
@@ -166,10 +156,10 @@
           <button class="plus">+</button>
         </div>
       </div>
-      <div data-cod="13">
+      <div data-cod="9">
         <div class="img"></div>
-        <h3>Medalhão de Frango</h3>
-        <p>Pacote KG c/ 4 un: R$<span class="preco">35,90</span></p>
+        <h3>Panceta</h3>
+        <p>Pacote c/ 5 un: R$<span class="preco">17,50</span></p>
         <button data-button="add">Adicionar</button>
         <div class="btn-number">
           <button class="minus">-</button>
@@ -188,10 +178,10 @@
           <button class="plus">+</button>
         </div>
       </div>
-      <div data-cod="15">
+      <div data-cod="16">
         <div class="img"></div>
-        <h3 class="nome">Tulipa</h3>
-        <p>Pacote KG c/ 4 un: R$<span class="preco">32,90</span></p>
+        <h3>Queijo Coalho Alegria</h3>
+        <p>Pacote KG c/ 6 un: R$<span class="preco">68,20</span></p>
         <button data-button="add">Adicionar</button>
         <div class="btn-number">
           <button class="minus">-</button>
@@ -199,10 +189,10 @@
           <button class="plus">+</button>
         </div>
       </div>
-      <div data-cod="16">
+      <div data-cod="15">
         <div class="img"></div>
-        <h3>Queijo Coalho Alegria</h3>
-        <p>Pacote KG c/ 6 un: R$<span class="preco">68,20</span></p>
+        <h3 class="nome">Tulipa</h3>
+        <p>Pacote KG c/ 4 un: R$<span class="preco">32,90</span></p>
         <button data-button="add">Adicionar</button>
         <div class="btn-number">
           <button class="minus">-</button>
@@ -239,50 +229,37 @@
     <form id="formulario">
       <h2 class="titulo-form">Faça agora mesmo seu orçamento</h2>
       <label for="nome">Nome*</label>
-      <input type="text" id="nome" name="nome" />
+      <input type="text" id="nome" name="nome" required minlength="3" maxlength="45"
+        placeholder="Escreva o nome completo..." />
       <div class="erro-input"></div>
-      <div class="entrega">
-        <label for=""><input type="radio" id="retirada" name="radio" value="retirada" required />Retirada</label>
-        <div class="erro-check"></div>
-        <div class="informa-retirada">
-          <img src="assets_reginaldo/icone_atencao.png" alt="" />
-          <p>Tempo estimado para conclusão do produto: 1 dia útil</p>
+      <div class="info-radio">
+        <div class="entrega">
+          <h3>Forma de entrega</h3>
+          <label for=""><input type="radio" id="retirada" name="radio" value="Retirada" required />Retirada</label>
+          <div class="informa-retirada">
+            <img src="assets_reginaldo/icone_atencao.png" alt="" />
+            <p>Tempo estimado para conclusão do produto: 1 dia útil</p>
+          </div>
+        </div>
+        <div class="pagamento">
+          <h3>Forma de pagamento</h3>
+          <label for=""><input type="radio" id="pix" name="pagRadio" value="Pix" required />Pix<img
+              src="assets_reginaldo/pix.png"></label>
+          <label for=""><input type="radio" id="debito" name="pagRadio" value="Débito" required />Cartão de
+            débito<img src="assets_reginaldo/icone-cartao.png"></label>
         </div>
       </div>
       <div class="produtos-selecionados">
         <h2>Produto(s) selecionado(s):</h2>
+        <div class="erro-produto"></div>
       </div>
-      <button class="enviar-orcamento">Enviar Orçamento</button>
+      <button class="enviar-orcamento" type="submit">Enviar Orçamento</input>
     </form>
   </main>
-  <footer>
-    <img src="assets_reginaldo/rodape.png" alt="" class="onda" />
-    <div class="footer-bg">
-      <div class="rodape container">
-        <div class="info-left">
-          <h2>Contatos</h2>
-          <div class="contatos-icons">
-            <img src="assets_reginaldo/social medias/insta-white.png" alt="Icone instagram na cor branca" />
-            <img src="assets_reginaldo/social medias/whats-white.png" alt="Icone whatsapp na cor branca" />
-          </div>
-          <h2>Endereço</h2>
-          <p>Rua ABC, 123 - Bairro Tal</p>
-          <p style="display: flex; align-items: center; gap: 10px">
-            Próximo a praça<a href=""><img src="assets_reginaldo/social medias/maps-white.png"
-                alt="Simbolo de um mapa com um indicador no meio na cor branca" /></a>
-          </p>
-        </div>
-        <div class="info-right">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="quemSomos.html">Quem somos</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="contatos.html">Contatos</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
+
+  <?php 
+  include_once('./inc/footer.php');
+  ?>
 </body>
 
 </html>

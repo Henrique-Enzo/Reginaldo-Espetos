@@ -15,20 +15,9 @@
 </head>
 
 <body>
-  <header>
-    <div class="menu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="produtos.html">Produtos</a></li>
-        <li>
-          <a href="index.html"><img src="assets_reginaldo/logo_oficial_reginaldo_espetos.jpg"
-              alt="Escudo dourado com garfos cruzados vermelhos centralizado inferiormente ao escudo com as iniciais R e E" /></a>
-        </li>
-        <li><a href="quemSomos.html">Quem somos</a></li>
-        <li><a href="contatos.html">Contatos</a></li>
-      </ul>
-    </div>
-  </header>
+  <?php 
+include_once('./inc/header.php')
+?>
   <div class="content-about">
     <div class="content">
       <h1>Sobre a fábrica Reginaldo Espetos</h1>
@@ -62,34 +51,11 @@
       width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
-  <footer>
-    <img src="assets_reginaldo/rodape.png" alt="" class="onda" />
-    <div class="footer-bg">
-      <div class="rodape container">
-        <div class="info-left">
-          <h2>Contatos</h2>
-          <div class="contatos-icons">
-            <img src="assets_reginaldo/social medias/insta-white.png" alt="Icone instagram na cor branca" />
-            <img src="assets_reginaldo/social medias/whats-white.png" alt="Icone whatsapp na cor branca" />
-          </div>
-          <h2>Endereço</h2>
-          <p>Rua ABC, 123 - Bairro Tal</p>
-          <p style="display: flex; align-items: center; gap: 10px">
-            Próximo a praça<a href=""><img src="assets_reginaldo/social medias/maps-white.png"
-                alt="Simbolo de um mapa com um indicador no meio na cor branca" /></a>
-          </p>
-        </div>
-        <div class="info-right">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="quemSomos.html">Quem somos</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="contatos.html">Contatos</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
+
+  <?php 
+  include_once('./inc/footer.php');
+  ?>
+
 </body>
 
 </html>

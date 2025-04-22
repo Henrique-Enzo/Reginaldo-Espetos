@@ -48,6 +48,10 @@ div.ativo .btn-number {
 
 .container h3 {
   font-size: 0.9rem;
+  background-color: #eedc8a;
+  padding: 3px 5px 3px 5px;
+  border-radius: 5px;
+  color: #8b0000;
 }
 
 .preco {
@@ -92,110 +96,6 @@ div.ativo .btn-number {
   background-color: #eedc8a;
   padding-left: 120px;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-#formulario {
-  margin-top: 50px;
-  max-width: 550px;
-  margin-bottom: 100px;
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.titulo-form {
-  color: #8b0000;
-  margin-bottom: 40px;
-  width: 60%;
-  text-align: center;
-  justify-self: center;
-}
-
-#formulario > label {
-  display: block;
-  /* font-weight: bold; */
-  font-size: 1.15rem;
-  margin-bottom: 5px;
-}
-
-#formulario > input {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 10px 15px;
-  background-color: #d9d9d9;
-  outline: none;
-  border: none;
-}
-
-.entrega {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-.entrega label {
-  font-size: 1rem;
-  font-weight: bold;
-  display: inline-block;
-}
-
-.entrega input {
-  margin-right: 10px;
-  margin-left: 5px;
-}
-
-.informa-retirada {
-  display: none;
-  align-items: center;
-  gap: 10px;
-}
-
-.informa-retirada img {
-  width: 20px;
-  margin-top: 5px;
-}
-
-.informa-retirada.ativo {
-  display: flex;
-}
-
-.produtos-selecionados {
-  max-width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  padding: 10px;
-  margin-bottom: 25px;
-  border-radius: 10px;
-}
-
-.produtos-selecionados div,
-.produtos-selecionados h2 {
-  margin-bottom: 10px;
-}
-
-#formulario > button {
-  background-color: #8b0000;
-  color: #dfc571;
-  justify-self: center;
-  padding: 10px 22px;
-  font-weight: bold;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  border: none;
-  outline: none;
-}
-
-#formulario > button:hover {
-  cursor: pointer;
-  background-color: #943535;
-}
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 
 @media (max-width: 1100px) {
