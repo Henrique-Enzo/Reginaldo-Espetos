@@ -10,7 +10,7 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <script src="./js/mobile-navbar.js" defer></script>
   <title>Reginaldo Espetos</title>
 </head>
 
@@ -38,47 +38,41 @@ include_once('./inc/header.php')
   <section class="home-produtos">
     <h1>Nossos Produtos</h1>
     <div class="produtos">
-      <div class="produto">
-        <img src="assets_reginaldo/bovina.jpeg" alt="">
-        <p class="produto-texto">Espeto de carne bovina</p>
-      </div>
-      <div class="produto">
-        <img src="assets_reginaldo/bovina.jpeg" alt="">
-        <p class="produto-texto">Espeto de carne bovina</p>
-      </div>
-      <div class="produto">
-        <img src="assets_reginaldo/bovina.jpeg" alt="">
-        <p class="produto-texto">Espeto de carne bovina</p>
-      </div>
-      <div class="produto">
-        <img src="assets_reginaldo/bovina.jpeg" alt="">
-        <p class="produto-texto">Espeto de carne bovina</p>
-      </div>
-      <div class="produto">
-        <img src="assets_reginaldo/bovina.jpeg" alt="">
-        <p class="produto-texto">Espeto de carne bovina</p>
-      </div>
-      <div class="produto">
-        <img src="assets_reginaldo/bovina.jpeg" alt="">
-        <p class="produto-texto">Espeto de carne bovina</p>
-      </div>
+      <ul>
+        <li>
+          <img src="./assets_reginaldo/bovina.jpeg" alt="">
+          <p>Espeto de carne bovina</p>
+        </li>
+        <li>
+          <img src="./assets_reginaldo/bovina.jpeg" alt="">
+          <p>Espeto de carne bovina</p>
+        </li>
+        <li>
+          <img src="./assets_reginaldo/bovina.jpeg" alt="">
+          <p>Espeto de carne bovina</p>
+        </li>
+        <li>
+          <img src="./assets_reginaldo/bovina.jpeg" alt="">
+          <p>Espeto de carne bovina</p>
+        </li>
+      </ul>
     </div>
     <button>Mais produtos<img src="assets_reginaldo/seta-dourado.png"></button>
   </section>
   <section class="home-parceiros">
     <h1>Nosso parceiros</h1>
     <p>Contamos com diversas empresas que fortalecem nossa trajetória e acreditam no nosso trabalho</p>
-    <div class="parceiros">
-      <img src="assets_reginaldo/parceiros/dogs.svg" alt="">
-      <img src="assets_reginaldo/parceiros/flexblog.svg" alt="">
-      <img src="assets_reginaldo/parceiros/dogs.svg" alt="">
-      <img src="assets_reginaldo/parceiros/flexblog.svg" alt="">
-      <img src="assets_reginaldo/parceiros/dogs.svg" alt="">
-      <img src="assets_reginaldo/parceiros/flexblog.svg" alt="">
-      <img src="assets_reginaldo/parceiros/dogs.svg" alt="">
-      <img src="assets_reginaldo/parceiros/flexblog.svg" alt="">
-      <img src="assets_reginaldo/parceiros/flexblog.svg" alt="">
-    </div>
+    <ul class="parceiros">
+      <li><img src="assets_reginaldo/parceiros/dogs.svg" alt=""></li>
+      <li><img src="assets_reginaldo/parceiros/flexblog.svg" alt=""></li>
+      <li><img src="assets_reginaldo/parceiros/dogs.svg" alt=""></li>
+      <li><img src="assets_reginaldo/parceiros/flexblog.svg" alt=""></li>
+      <li><img src="assets_reginaldo/parceiros/dogs.svg" alt=""></li>
+      <li><img src="assets_reginaldo/parceiros/flexblog.svg" alt=""></li>
+      <li><img src="assets_reginaldo/parceiros/dogs.svg" alt=""></li>
+      <li><img src="assets_reginaldo/parceiros/flexblog.svg" alt=""></li>
+      <li><img src="assets_reginaldo/parceiros/flexblog.svg" alt=""></li>
+      </div>
   </section>
 
   <?php 

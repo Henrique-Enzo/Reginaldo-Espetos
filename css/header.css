@@ -35,4 +35,65 @@
   padding-left: 100px;
   border-top: 5px solid #bbc628;
 }
+
+.img-mobile {
+  display: none;
+}
+
 /* Fim estilo cabeçalho */
+
+@media (max-width: 500px) {
+  .img-mobile {
+    display: block;
+  }
+
+  .menu ul li img {
+    display: none;
+  }
+
+  .menu {
+    justify-content: end;
+    padding: 0px;
+  }
+
+  .menu img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: #8b0000;
+    width: 100vw;
+    height: 230px;
+    padding-top: 10px;
+    opacity: 0;
+    transform: translateY(-50px);
+    pointer-events: none;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    z-index: 1000;
+  }
+
+  .menu ul.ativo {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+  }
+
+  .fecharMobile::before {
+    content: " ";
+    width: 32px;
+    height: 32px;
+    background-image: url(../assets_reginaldo/fechar.png);
+    background-size: cover;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 2px;
+    cursor: pointer;
+  }
+}

@@ -20,10 +20,10 @@
       </div>
       <div class="info-right">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="quemSomos.html">Quem somos</a></li>
-          <li><a href="produtos.html">Produtos</a></li>
-          <li><a href="contatos.html">Contatos</a></li>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="quemSomos.php">Quem somos</a></li>
+          <li><a href="produtos.php">Produtos</a></li>
+          <li><a href="contatos.php">Contatos</a></li>
         </ul>
       </div>
     </div>
