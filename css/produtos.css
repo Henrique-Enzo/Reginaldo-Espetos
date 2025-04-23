@@ -1,5 +1,3 @@
-/* Formulário de orçamento */
-
 .img {
   background-image: url(../assets_reginaldo/bovina.jpeg);
   height: 150px;
@@ -107,5 +105,9 @@ div.ativo .btn-number {
 @media (max-width: 600px) {
   #produtos {
     grid-template-columns: 1fr;
+  }
+
+  .titulo-produto {
+    padding-left: 40px;
   }
 }
