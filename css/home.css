@@ -32,11 +32,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1100px;
+  padding-inline: 10px;
 }
 
 .home-quem-somos p {
   font-size: 25px;
   margin-bottom: 0px;
+  padding-inline: 10px;
 }
 
 .title-quem-somos {
@@ -94,15 +96,9 @@
   display: none;
 }
 
-.produtos ul li {
-  flex: 0 0 auto;
-  display: inline-block;
-  scroll-snap-align: start;
-}
-
 .produtos img {
-  width: 250px;
-  height: 200px;
+  width: 200px;
+  height: 170px;
   object-fit: cover;
   margin: 0px;
   padding: 0px;
@@ -164,6 +160,7 @@
   justify-items: center;
   align-items: center;
   row-gap: 30px;
+  padding-inline: 20px;
 }
 
 .parceiros img {
@@ -179,6 +176,20 @@
 
   .home-produtos button {
     margin-top: 20px;
+  }
+
+  .produtos ul {
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    justify-content: start;
+    padding-inline: 10px;
+  }
+
+  .produtos ul li {
+    flex: 0 0 auto;
+    display: inline-block;
+    scroll-snap-align: start;
   }
 
   .parceiros {
@@ -198,22 +209,12 @@
   }
 }
 
-@media (max-width: 500px) {
-  .img-titulo h1 {
-    font-size: 4rem;
-    text-align: center;
-  }
-
-  .img-titulo h2 {
-    text-align: center;
-    padding-inline: 5px;
-    margin-top: 10px;
-  }
-
+@media (max-width: 600px) {
   .home-quem-somos {
     grid-template-columns: 1fr;
     padding-inline: 5px;
     margin-bottom: -50px;
+    padding-inline: 20px;
   }
 
   .home-quem-somos p {
@@ -223,6 +224,19 @@
   }
 
   .home-quem-somos button {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .img-titulo h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .img-titulo h2 {
+    text-align: center;
+    padding-inline: 5px;
     margin-top: 10px;
   }
 
