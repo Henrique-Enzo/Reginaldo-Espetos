@@ -24,7 +24,7 @@
 }
 
 .img-titulo h1 {
-  font-size: 5.5rem;
+  font-size: 5rem;
   font-weight: 600;
 }
 
@@ -170,7 +170,6 @@
 @media (max-width: 900px) {
   .img-titulo h1,
   .img-titulo h2 {
-    padding-inline: 10px;
     text-align: center;
   }
 
@@ -227,14 +226,14 @@
     margin-top: 10px;
   }
 
-  .produtos ul {
-    padding-inline: 10px;
+  .parceiros img {
+    width: 100px;
   }
 }
 
 @media (max-width: 500px) {
   .img-titulo h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
   }
 
@@ -246,10 +245,6 @@
 
   .home-produtos h1 {
     margin-bottom: 20px;
-  }
-
-  .produtos ul {
-    max-width: 400px;
   }
 
   .home-parceiros h1 {
