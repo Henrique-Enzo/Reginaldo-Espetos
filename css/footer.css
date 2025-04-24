@@ -26,6 +26,10 @@ footer h2 {
   margin-right: 10px;
 }
 
+.info-left p {
+  text-align: left;
+}
+
 .info-right {
   margin-right: 50px;
 }
@@ -45,4 +49,25 @@ footer h2 {
 .onda {
   margin-bottom: -10px;
   width: 100%;
+}
+
+@media (max-width: 600px) {
+  .rodape {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .info-right {
+    justify-items: center;
+    text-align: center;
+    margin: 0px;
+  }
+
+  .info-right a {
+    font-size: 1rem;
+  }
+
+  .info-left {
+    display: none;
+  }
 }

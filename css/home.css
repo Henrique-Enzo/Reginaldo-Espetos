@@ -226,6 +226,10 @@
   .home-quem-somos button {
     margin-top: 10px;
   }
+
+  .produtos ul {
+    padding-inline: 10px;
+  }
 }
 
 @media (max-width: 500px) {
