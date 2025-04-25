@@ -40,6 +40,14 @@ function plusOrMinus(div) {
     inputQtd.value--;
     recebeDados(div, dados);
   });
+
+  // Adiciona o produto se a pessoa digitar
+  inputQtd.addEventListener("change", () => {
+    recebeDados(div, dados);
+    if (inputQtd.value == 0) {
+      inputQtd.value = "";
+    }
+  });
 }
 
 // Setado preço direto no objeto para melhor segurança das informações
