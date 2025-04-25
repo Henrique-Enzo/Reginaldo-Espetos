@@ -72,11 +72,13 @@ const precosPorID = {
   B: 31.5,
 };
 
+let somaTotal = 0;
 // Função responsável pela interação do usuario com a quantidade do produto e o formulario
 function recebeDados(div, dados) {
   const inputQtd = div.querySelector(".btn-number input");
   const nomeProduto = div.querySelector("h3").innerText;
   const areaProdutos = document.querySelector(".produtos-selecionados");
+  const totalProdutos = document.querySelector(".produtos-total");
 
   const info = div.dataset.cod;
   const elementoExistente = document.querySelector(`div[data-id="${info}"]`);
@@ -86,6 +88,7 @@ function recebeDados(div, dados) {
   dados.qtd = +inputQtd.value;
   let total = dados.qtd * valor;
   total = total.toFixed(2);
+  somaTotal += +valor;
 
   // Verifica se o elemento que contém o produto selecionado existe
   // Caso nao, entao cria esse elemento (evita duplicação)
@@ -107,6 +110,7 @@ function recebeDados(div, dados) {
       elementoExistente.innerText = `${dados.nome} - x${dados.qtd} pacote(s) - Total: R$${total}`;
     }
   }
+  totalProdutos.innerText = "Total dos produtos: R$" + somaTotal.toFixed(2);
 }
 
 // Caso o contador do produto for igual ou menor a 0, então remove do formulário o produto
@@ -199,6 +203,8 @@ function mandaOrcamento(inputNome, inputCheck, divProdutos, form) {
   divProdutos.forEach((div) => {
     mensagem += `• ${div.textContent}\n`;
   });
+
+  mensagem += `\nTotal dos produtos: *R$${somaTotal.toFixed(2)}*`;
 
   localStorage.removeItem(LOCAL_KEY);
 
