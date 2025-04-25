@@ -51,6 +51,7 @@
 .title-quem-somos h1 {
   font-size: 3rem;
   text-align: center;
+  color: #8b0000;
 }
 
 .title-quem-somos button {
@@ -60,8 +61,11 @@
   border-radius: 5px;
   border: none;
   background-color: #8b0000;
-  color: #dfc571;
   justify-self: center;
+}
+
+.title-quem-somos button a {
+  color: #dfc571;
 }
 
 .title-quem-somos button:hover,
@@ -127,9 +131,12 @@
   font-size: 25px;
   font-weight: 600;
   padding: 5px 15px 5px 15px;
-  color: #dfc571;
   margin-left: auto;
   margin-right: auto;
+}
+
+.home-produtos button a {
+  color: #dfc571;
 }
 
 .home-produtos button img {
@@ -209,6 +216,12 @@
 }
 
 @media (max-width: 600px) {
+  .title-quem-somos h1,
+  .home-produtos h1,
+  .home-parceiros h1 {
+    font-size: 2rem;
+  }
+
   .home-quem-somos {
     grid-template-columns: 1fr;
     padding-inline: 5px;
@@ -229,6 +242,18 @@
   .parceiros img {
     width: 100px;
   }
+
+  .home-parceiros p {
+    font-size: 20px;
+    padding-inline: 10px;
+  }
+
+  .home-parceiros h1 {
+    margin-bottom: 20px;
+  }
+  .home-produtos button {
+    font-size: 1.15rem;
+  }
 }
 
 @media (max-width: 500px) {
@@ -245,14 +270,5 @@
 
   .home-produtos h1 {
     margin-bottom: 20px;
-  }
-
-  .home-parceiros h1 {
-    margin-bottom: 20px;
-  }
-
-  .home-parceiros p {
-    font-size: 20px;
-    padding-inline: 10px;
   }
 }
