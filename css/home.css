@@ -1,7 +1,7 @@
 .img-titulo {
   display: flex;
   width: 100%;
-  height: 450px;
+  height: 90vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../assets_reginaldo/foto-home-2.png);
   background-size: cover;
@@ -15,6 +15,10 @@
 
   border-top: 5px solid #bbc628;
   border-bottom: 5px solid #bbc628;
+}
+
+.titulo-inicial{
+  position: relative;
 }
 
 .container-home {
