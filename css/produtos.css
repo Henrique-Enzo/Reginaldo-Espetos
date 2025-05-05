@@ -16,6 +16,11 @@
   padding-top: 50px;
 }
 
+#produtos button[data-button="add"]:hover {
+  cursor: pointer;
+  background-color: #a30f0f;
+}
+
 #produtos div {
   display: flex;
   align-items: center;

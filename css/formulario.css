@@ -1,6 +1,6 @@
 #formulario {
   margin-top: 50px;
-  max-width: 620px;
+  max-width: 750px;
   margin-bottom: 100px;
   display: grid;
   grid-template-columns: 1fr;
@@ -81,7 +81,15 @@
   display: flex;
 }
 
-.produtos {
+.produtos-selecionados {
+  padding-inline: 20px;
+}
+
+.produtos-selecionados li {
+  margin-bottom: 10px;
+}
+
+.produtos-formulario {
   max-width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.3);
   padding: 10px;
@@ -89,8 +97,8 @@
   border-radius: 10px;
 }
 
-.produtos div,
-.produtos h2 {
+.produtos-formulario div,
+.produtos-formulario h2 {
   margin-bottom: 10px;
 }
 
