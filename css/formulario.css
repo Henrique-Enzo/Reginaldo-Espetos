@@ -1,6 +1,6 @@
 #formulario {
   margin-top: 50px;
-  max-width: 620px;
+  max-width: 750px;
   margin-bottom: 100px;
   display: grid;
   grid-template-columns: 1fr;
@@ -79,6 +79,14 @@
 
 .informa-retirada.ativo {
   display: flex;
+}
+
+.produtos-selecionados {
+  padding-inline: 20px;
+}
+
+.produtos-selecionados li {
+  margin-bottom: 10px;
 }
 
 .produtos-formulario {

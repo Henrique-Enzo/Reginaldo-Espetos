@@ -6,6 +6,10 @@
   padding-top: 5px;
 }
 
+.menu li {
+  list-style: none;
+}
+
 .titulo {
   height: 120px;
   background-color: #8b0000;

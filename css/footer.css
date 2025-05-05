@@ -2,6 +2,10 @@
   background-color: #8b0000;
 }
 
+.rodape li {
+  list-style: none;
+}
+
 .rodape {
   color: white;
   display: flex;

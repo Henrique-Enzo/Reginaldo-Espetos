@@ -72,7 +72,6 @@ const precosPorID = {
   B: 31.5,
 };
 
-let somaTotal = 0;
 // Função responsável pela interação do usuario com a quantidade do produto e o formulario
 function recebeDados(div, dados) {
   const inputQtd = div.querySelector(".btn-number input");
@@ -81,19 +80,18 @@ function recebeDados(div, dados) {
   const totalProdutos = document.querySelector(".produtos-total");
 
   const info = div.dataset.cod;
-  const elementoExistente = document.querySelector(`div[data-id="${info}"]`);
+  const elementoExistente = document.querySelector(`li[data-id="${info}"]`);
 
   const valor = precosPorID[info];
   dados.nome = nomeProduto;
   dados.qtd = +inputQtd.value;
   let total = dados.qtd * valor;
   total = total.toFixed(2);
-  somaTotal += +valor;
 
   // Verifica se o elemento que contém o produto selecionado existe
   // Caso nao, entao cria esse elemento (evita duplicação)
   if (!elementoExistente && div.classList.contains("ativo")) {
-    const novoElemento = document.createElement("div");
+    const novoElemento = document.createElement("li");
     novoElemento.setAttribute("data-id", `${info}`);
     if (isNaN(Number(info))) {
       novoElemento.innerText = `Porção ${dados.nome} - Pacote c/ ${dados.qtd} Kg(s) - Total: R$${total}`;
@@ -110,13 +108,13 @@ function recebeDados(div, dados) {
       elementoExistente.innerText = `${dados.nome} - x${dados.qtd} pacote(s) - Total: R$${total}`;
     }
   }
-  totalProdutos.innerText = "Total dos produtos: R$" + somaTotal.toFixed(2);
+  recalculaTotal();
 }
 
 // Caso o contador do produto for igual ou menor a 0, então remove do formulário o produto
 function removeProduto(div, dados) {
   const info = div.dataset.cod;
-  const elementoExistente = document.querySelector(`div[data-id="${info}"]`);
+  const elementoExistente = document.querySelector(`li[data-id="${info}"]`);
   if (elementoExistente) {
     if (dados.qtd <= 0) {
       elementoExistente.remove();
@@ -239,4 +237,28 @@ function abrirWhatsapp() {
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
 
   window.open(url, "_blank");
+}
+
+function recalculaTotal() {
+  const produtosAtuais = document.querySelectorAll(".produtos-selecionados li");
+  let total = 0;
+
+  produtosAtuais.forEach((item) => {
+    const match = item.textContent.match(/Total: R\$(\d+,\d{2}|\d+\.\d{2})/);
+    if (match) {
+      const valor = parseFloat(match[1].replace(",", "."));
+      total += valor;
+    }
+  });
+
+  somaTotal = total;
+  const totalProdutos = document.querySelector(".produtos-total");
+
+  // Se não houver produtos, limpa o texto. Senão, exibe o total.
+  if (produtosAtuais.length === 0) {
+    totalProdutos.innerText = "";
+  } else {
+    totalProdutos.innerText =
+      "Total dos produtos: R$" + total.toFixed(2).replace(".", ",");
+  }
 }

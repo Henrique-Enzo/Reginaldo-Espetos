@@ -17,7 +17,7 @@
   border-bottom: 5px solid #bbc628;
 }
 
-.titulo-inicial{
+.titulo-inicial {
   position: relative;
 }
 
@@ -83,6 +83,10 @@
 
 .home-produtos {
   margin-bottom: 100px;
+}
+
+.home-produtos li {
+  list-style: none;
 }
 
 .home-produtos h1 {
@@ -152,6 +156,10 @@
 
 .home-parceiros {
   margin-bottom: 100px;
+}
+
+.home-parceiros li {
+  list-style: none;
 }
 
 .home-parceiros h1 {
