@@ -1,7 +1,7 @@
 .img-titulo {
   display: flex;
   width: 100%;
-  height: 450px;
+  height: 90vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../assets_reginaldo/foto-home-2.png);
   background-size: cover;
@@ -183,6 +183,10 @@
 
   .home-produtos button {
     margin-top: 20px;
+  }
+
+  .home-produtos .produtos {
+    border: none !important;
   }
 
   .produtos ul {

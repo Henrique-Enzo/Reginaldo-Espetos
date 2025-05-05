@@ -42,7 +42,7 @@ function plusOrMinus(div) {
   });
 
   // Adiciona o produto se a pessoa digitar
-  inputQtd.addEventListener("change", () => {
+  inputQtd.addEventListener("keyup", () => {
     recebeDados(div, dados);
     if (inputQtd.value == 0) {
       inputQtd.value = "";
