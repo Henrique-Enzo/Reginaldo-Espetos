@@ -33,6 +33,18 @@
   font-weight: 600;
 }
 
+.img-titulo img{
+  width: 15%;
+  border-radius: 50%; 
+
+  /* Degrade */
+  mask-image: radial-gradient(circle, black 50%, transparent 64%);
+  -webkit-mask-image: radial-gradient(circle, black 50%, transparent 64%);
+  
+  mask-mode: alpha;
+  -webkit-mask-mode: alpha;
+}
+
 .home-quem-somos {
   display: grid;
   grid-template-columns: 1fr 1fr;

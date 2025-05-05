@@ -229,15 +229,15 @@ function salvaNome() {
 }
 salvaNome();
 
-function abrirWhatsapp() {
-  const mensagem =
-    "Olá, vim diretamente do website e desejo fazer um orçamento ou adquirir mais informações!";
-  const numero = 19993104470;
+// function abrirWhatsapp() {
+//   const mensagem =
+//     "Olá, vim diretamente do website e desejo fazer um orçamento ou adquirir mais informações!";
+//   const numero = 19993104470;
 
-  const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+//   const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
 
-  window.open(url, "_blank");
-}
+//   window.open(url, "_blank");
+// }
 
 function recalculaTotal() {
   const produtosAtuais = document.querySelectorAll(".produtos-selecionados li");
