@@ -17,6 +17,10 @@
   border-bottom: 5px solid #bbc628;
 }
 
+.titulo-inicial{
+  position: relative;
+}
+
 .container-home {
   display: flex;
   justify-content: center;
