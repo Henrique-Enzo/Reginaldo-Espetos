@@ -63,6 +63,14 @@
   grid-template-columns: 1fr;
   align-items: center;
   align-content: space-between;
+
+  #Logo_quem_somos{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .title-quem-somos h1 {
