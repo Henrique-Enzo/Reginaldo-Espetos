@@ -4,6 +4,7 @@
   justify-content: center;
   background-color: #8b0000;
   padding-top: 5px;
+  padding-left: 55px;
 }
 
 .menu li {
@@ -22,14 +23,16 @@
 
 .menu ul {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
 }
 
 .menu a {
   color: #fff;
-  font-weight: 500;
+  font-weight: 300;
   letter-spacing: 1.5;
+  font-size: 1.15rem;
+  padding-inline: 10px;
 }
 
 .menu ul li img {
