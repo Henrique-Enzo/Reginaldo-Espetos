@@ -111,6 +111,10 @@
   margin-bottom: 10px;
 }
 
+.produtos-formulario h2 {
+  color: #8b0000;
+}
+
 #formulario > button {
   background-color: #8b0000;
   color: #dfc571;
