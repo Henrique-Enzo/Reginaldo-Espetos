@@ -1,0 +1,19 @@
+.titulo-contato {
+  color: #8b0000;
+  padding-left: 5px;
+}
+
+.info-contato {
+  padding: 20px;
+  height: 250px;
+  display: grid;
+  align-items: center;
+}
+
+.info-contato h2 {
+  color: #8b0000;
+}
+
+.info-contato span {
+  color: #000;
+}

@@ -12,6 +12,10 @@
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+#nome {
+  border-radius: 10px;
+}
+
 .titulo-form {
   color: #8b0000;
   margin-bottom: 40px;
@@ -43,6 +47,11 @@
   gap: 10px;
   position: relative;
   padding: 5px;
+}
+
+.entrega h3,
+.pagamento h3 {
+  color: #8b0000;
 }
 
 .entrega::after {
