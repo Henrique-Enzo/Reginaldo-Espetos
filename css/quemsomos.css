@@ -9,13 +9,13 @@ body {
 }
 
 .content-about {
-  background-color: #8b0000;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 100px 20px 100px 20px;
-  border-top: 5px solid #bbc628;
-  border-bottom: 5px solid #bbc628;
+  border-top: 5px solid #C3933F;
+  border-bottom: 5px solid #C3933F;
 }
 
 .content {
@@ -24,13 +24,13 @@ body {
 }
 
 .content h1 {
-  color: #dfc571;
+  color: #000000;
   font-size: 45px;
   margin-bottom: 5px;
 }
 
 .content p {
-  color: #fff;
+  color: #000000;
   font-size: 22px;
 }
 

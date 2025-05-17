@@ -8,6 +8,11 @@
   margin-top: 10px;
 }
 
+.titulo{
+  background-color: #fff;
+  color: #a30f0f;
+}
+
 #produtos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -95,8 +100,8 @@ div.ativo .btn-number {
 
 .titulo-produto {
   font-weight: bold;
-  color: #201e1f;
-  background-color: #eedc8a;
+  color: #eedc8a;
+  background-color: #8b0000;
   padding-left: 120px;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
 }
