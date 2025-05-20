@@ -131,7 +131,12 @@
 }
 
 .produtos ul li {
+  transition: transform 0.4s ease;
   padding-left: 50px;
+}
+
+.produtos ul li:hover {
+  transform: scale(1.1);
 }
 
 .produtos ul li:first-child {
