@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="style.css" />
   <script src="./js/mobile-navbar.js" defer></script>
   <script src="./js/produto.js" defer></script>
+  <script src="./js/sanfona-prod.js" defer></script>
   <title>Reginaldo Espetos</title>
 </head>
 
@@ -36,8 +37,8 @@
     <h1>Aproveite e faça seu pedido!</h1>
   </div>
   <main>
-    <h2 class="titulo-produto">Nossos Espetos</h2>
-    <section id="produtos" class="container">
+    <h2 class="titulo-produto titulo-pacote">Nossos Espetos - Pacote<span class="seta-pacote">➜</span></h2>
+    <section id="produtos" class="container preco-pacote">
       <div data-cod="1">
         <div class="img"></div>
         <h3>Bolinha Mandioca c/ Queijo e Bacon</h3>
@@ -215,8 +216,8 @@
         </div>
       </div>
     </section>
-    <h2 class="titulo-produto">Nossas Porções</h2>
-    <section id="produtos" class="container">
+    <h2 class="titulo-produto titulo-kg">Nossas Espetos - Kg<span class="seta-kg">➜</span></h2>
+    <section id="produtos" class="container preco-kg">
       <div data-cod="A">
         <div class="img"></div>
         <h3>Bolinha Mandioca c/ Queijo e Bacon</h3>
@@ -232,6 +233,182 @@
         <div class="img"></div>
         <h3 class="nome">Bolinha de Kibe c/ Queijo</h3>
         <p>Preço por KG: R$<span class="preco">31,50</span></p>
+        <button data-button="add">Adicionar</button>
+        <div class="btn-number">
+          <button class="minus">-</button>
+          <input type="number" min="0" max="100" value="0" />
+          <button class="plus">+</button>
+        </div>
+      </div>
+      <div data-cod="C">
+        <div class="img"></div>
+        <h3>Bolinha Mandioca c/ Queijo e Bacon</h3>
+        <p>Pacote por Kg: R$<span class="preco">17,80</span></p>
+        <button data-button="add">Adicionar</button>
+        <div class="btn-number">
+          <button class="minus">-</button>
+          <input type="number" min="0" max="100" value="0" />
+          <button class="plus">+</button>
+        </div>
+      </div>
+      <div data-cod="D">
+        <div class="img"></div>
+        <h3>Bolinha Quibe c/ Queijo e Bacon</h3>
+        <p>Pacote por KG$<span class="preco">18,00</span></p>
+        <button data-button="add">Adicionar</button>
+        <div class="btn-number">
+          <button class="minus">-</button>
+          <input type="number" min="0" max="100" value="0" />
+          <button class="plus">+</button>
+        </div>
+      </div>
+      <div data-cod="E">
+        <div class="img"></div>
+        <h3 class="nome">Coração</h3>
+        <p>Pacote por KG$<span class="preco">25,00</span></p>
+        <button data-button="add">Adicionar</button>
+        <div class="btn-number">
+          <button class="minus">-</button>
+          <input type="number" min="0" max="100" value="0" />
+          <button class="plus">+</button>
+        </div>
+      </div>
+      <div data-cod="F">
+        <div class="img"></div>
+        <h3>Filé de Frango</h3>
+        <p>Pacote por KG$<span class="preco">17,50</span></p>
+        <button data-button="add">Adicionar</button>
+        <div class="btn-number">
+          <button class="minus">-</button>
+          <input type="number" min="0" max="100" value="0" />
+          <button class="plus">+</button>
+        </div>
+      </div>
+      <div data-cod="G">
+        <div class="img"></div>
+        <h3>Kafta Tradicional</h3>
+        <p>Pacote por KG$<span class="preco">20,40</span></p>
+        <button data-button="add">Adicionar</button>
+        <div class="btn-number">
+          <button class="minus">-</button>
+          <input type="number" min="0" max="100" value="0" />
+          <button class="plus">+</button>
+        </div>
+      </div>
+      <div data-cod="H">
+        <div class="img"></div>
+        <h3>Kaftão de Carne c/ Queijo</h3>
+        <p>Pacote por KG$<span class="preco">20,00</span></p>
+        <button data-button="add">Adicionar</button>
+        <div class="btn-number">
+          <button class="minus">-</button>
+          <input type="number" min="0" max="100" value="0" />
+          <button class="plus">+</button>
+        </div>
+      </div>
+      <div data-cod="I">
+        <div class="img"></div>
+        <h3 class="nome">Kaftão de Frango c/ Queijo</h3>
+        <p>Pacote por KG$<span class="preco">18,40</span></p>
+        <button data-button="add">Adicionar</button>
+        <div class="btn-number">
+          <button class="minus">-</button>
+          <input type="number" min="0" max="100" value="0" />
+          <button class="plus">+</button>
+        </div>
+      </div>
+      <div data-cod="J">
+        <div class="img"></div>
+        <h3>Pão de Alho General</h3>
+        <p>Pacote por KG$<span class="preco">11,00</span></p>
+        <button data-button="add">Adicionar</button>
+        <div class="btn-number">
+          <button class="minus">-</button>
+          <input type="number" min="0" max="100" value="0" />
+          <button class="plus">+</button>
+        </div>
+      </div>
+      <div data-cod="K">
+        <div class="img"></div>
+        <h3 class="nome">Kibão c/ Queijo</h3>
+        <p>Pacote por KG$<span class="preco">18,00</span></p>
+        <button data-button="add">Adicionar</button>
+        <div class="btn-number">
+          <button class="minus">-</button>
+          <input type="number" min="0" max="100" value="0" />
+          <button class="plus">+</button>
+        </div>
+      </div>
+      <div data-cod="L">
+        <div class="img"></div>
+        <h3>Linguiça Fina de Pernil Tradicional</h3>
+        <p>Pacote por KG$<span class="preco">15,60</span></p>
+        <button data-button="add">Adicionar</button>
+        <div class="btn-number">
+          <button class="minus">-</button>
+          <input type="number" min="0" max="100" value="0" />
+          <button class="plus">+</button>
+        </div>
+      </div>
+      <div data-cod="M">
+        <div class="img"></div>
+        <h3>Linguiça Fina de Pernil Apimentado</h3>
+        <p>Pacote por KG$<span class="preco">15,60</span></p>
+        <button data-button="add">Adicionar</button>
+        <div class="btn-number">
+          <button class="minus">-</button>
+          <input type="number" min="0" max="100" value="0" />
+          <button class="plus">+</button>
+        </div>
+      </div>
+      <div data-cod="N">
+        <div class="img"></div>
+        <h3>Medalhão de Frango</h3>
+        <p>Pacote por KG: R$<span class="preco">35,90</span></p>
+        <button data-button="add">Adicionar</button>
+        <div class="btn-number">
+          <button class="minus">-</button>
+          <input type="number" min="0" max="100" value="0" />
+          <button class="plus">+</button>
+        </div>
+      </div>
+      <div data-cod="O">
+        <div class="img"></div>
+        <h3>Panceta</h3>
+        <p>Pacote por KG$<span class="preco">17,50</span></p>
+        <button data-button="add">Adicionar</button>
+        <div class="btn-number">
+          <button class="minus">-</button>
+          <input type="number" min="0" max="100" value="0" />
+          <button class="plus">+</button>
+        </div>
+      </div>
+      <div data-cod="P">
+        <div class="img"></div>
+        <h3>Queijo Mussarela Bolinha</h3>
+        <p>Pacote por KG: R$<span class="preco">59,90</span></p>
+        <button data-button="add">Adicionar</button>
+        <div class="btn-number">
+          <button class="minus">-</button>
+          <input type="number" min="0" max="100" value="0" />
+          <button class="plus">+</button>
+        </div>
+      </div>
+      <div data-cod="Q">
+        <div class="img"></div>
+        <h3>Queijo Coalho Alegria</h3>
+        <p>Pacote por KG: R$<span class="preco">68,20</span></p>
+        <button data-button="add">Adicionar</button>
+        <div class="btn-number">
+          <button class="minus">-</button>
+          <input type="number" min="0" max="100" value="0" />
+          <button class="plus">+</button>
+        </div>
+      </div>
+      <div data-cod="R">
+        <div class="img"></div>
+        <h3 class="nome">Tulipa</h3>
+        <p>Pacote por KG: R$<span class="preco">32,90</span></p>
         <button data-button="add">Adicionar</button>
         <div class="btn-number">
           <button class="minus">-</button>
