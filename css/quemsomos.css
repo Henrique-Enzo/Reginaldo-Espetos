@@ -47,6 +47,7 @@ body {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  padding-inline: 10px;
   padding-top: 30px;
   padding-bottom: 30px;
   color: #fff;
@@ -129,5 +130,20 @@ iframe {
 
   .endereco h2 {
     font-size: 1.75rem;
+  }
+
+  .img-quem-somos {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 650px) {
+  .content-about {
+    padding-top: 50px;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+    padding-bottom: 50px;
   }
 }

@@ -12,6 +12,7 @@
 .titulo {
   background-color: #fff;
   color: #a30f0f;
+  padding-left: 80px;
 }
 
 #produtos {
@@ -112,23 +113,14 @@ div.ativo .btn-number {
 
 /* Código para esconder produtos via JS */
 
-.preco-pacote {
-  overflow: hidden;
-  max-height: 1500px;
-  transition: max-height 0.6s ease;
-}
-
-.preco-pacote.hidden {
-  max-height: 0;
-  margin-top: 0;
-}
-
+.preco-pacote,
 .preco-kg {
   overflow: hidden;
   max-height: 1500px;
   transition: max-height 0.4s ease;
 }
 
+.preco-pacote.hidden,
 .preco-kg.hidden {
   max-height: 0;
   margin-top: 0;
@@ -147,9 +139,16 @@ div.ativo .btn-number {
   transform: rotate(0deg);
 }
 
+/* Código de responsividade */
+
 @media (max-width: 1100px) {
   #produtos {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .preco-pacote,
+  .preco-kg {
+    max-height: 5500px;
   }
 }
 
@@ -160,5 +159,26 @@ div.ativo .btn-number {
 
   .titulo-produto {
     padding-left: 40px;
+  }
+
+  .titulo {
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .titulo-produto {
+    font-size: 1.2rem;
+    padding-left: 20px;
+  }
+
+  .titulo {
+    font-size: 0.75rem;
+    padding-left: 15px;
+  }
+
+  .seta-kg,
+  .seta-pacote {
+    margin-right: 10px;
   }
 }
