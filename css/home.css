@@ -13,8 +13,8 @@
   justify-content: center;
   color: #fff;
 
-  border-top: 5px solid #C3933F;
-  border-bottom: 5px solid #C3933F;
+  border-top: 5px solid #c3933f;
+  border-bottom: 5px solid #c3933f;
 }
 
 .titulo-inicial {
@@ -123,12 +123,23 @@
 
 .produtos ul {
   display: flex;
-  gap: 20px;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
   margin-top: 20px;
+}
+
+.produtos ul li {
+  padding-left: 50px;
+}
+
+.produtos ul li:first-child {
+  padding-left: 10px;
+}
+
+.produtos ul li:last-child {
+  padding-right: 10px;
 }
 
 .produtos ul::-webkit-scrollbar {
