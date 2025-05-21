@@ -1,6 +1,22 @@
 .titulo-contato {
   color: #8b0000;
-  padding-left: 5px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+  border-top: 5px solid #c3933f;
+}
+
+.img-referencia{
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}
+
+.endereco{
+  border-top: 5px solid #c3933f;
+  border-bottom: 5px solid #c3933f;
 }
 
 .info-contato {
@@ -8,6 +24,7 @@
   height: 250px;
   display: grid;
   align-items: center;
+  background-color: #fff;
 }
 
 .info-contato h2 {
