@@ -55,6 +55,14 @@ footer h2 {
   width: 100%;
 }
 
+.copy {
+  text-align: center;
+  background-color: #8b0000;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 2px 0px;
+}
+
 @media (max-width: 600px) {
   .rodape {
     display: grid;

@@ -99,14 +99,6 @@ iframe {
   border-radius: 5px;
 }
 
-.horarios {
-  color: #fff;
-}
-
-.horarios strong {
-  color: #dfc571;
-}
-
 @media (max-width: 850px) {
   .content-historia {
     grid-template-columns: 1fr;
