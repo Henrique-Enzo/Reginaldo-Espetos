@@ -32,6 +32,7 @@ body {
 .content p {
   color: #000000;
   font-size: 22px;
+  padding-inline: 30px;
 }
 
 .content-bg {

@@ -5,8 +5,8 @@
   font-weight: bold;
   height: 120px;
   border-top: 5px solid #c3933f;
-  border-bottom: 5px solid #c3933f;
-  margin-bottom: 50px;
+  /* border-bottom: 5px solid #c3933f; */
+  margin-bottom: 25px;
   color: #8b0000;
 }
 

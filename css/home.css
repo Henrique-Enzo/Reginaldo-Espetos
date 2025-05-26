@@ -218,9 +218,8 @@
 }
 
 .parceiros {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  justify-items: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
   row-gap: 30px;
   padding-inline: 20px;
