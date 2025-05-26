@@ -57,7 +57,7 @@ div.ativo .btn-number {
 }
 
 .container h3 {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   background-color: #eedc8a;
   padding: 3px 5px 3px 5px;
   border-radius: 5px;
@@ -116,7 +116,7 @@ div.ativo .btn-number {
 .preco-pacote,
 .preco-kg {
   overflow: hidden;
-  max-height: 1500px;
+  max-height: max-content;
   transition: max-height 0.4s ease;
 }
 
@@ -148,7 +148,7 @@ div.ativo .btn-number {
 
   .preco-pacote,
   .preco-kg {
-    max-height: 5500px;
+    /* max-height: max-content; */
   }
 }
 
@@ -183,7 +183,7 @@ div.ativo .btn-number {
   }
 }
 
-.aviso-valores{
+.aviso-valores {
   justify-self: center;
   padding-top: 0%;
   margin-bottom: 100px;
