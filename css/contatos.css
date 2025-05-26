@@ -75,3 +75,65 @@
 .horarios {
   color: #dfc571;
 }
+
+@media (max-width: 1050px) {
+  .grid-contato {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .df:last-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    grid-column: 1 / -1;
+  }
+
+  .df:nth-child(2) {
+    border: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .df {
+    padding: 0;
+    border: none !important;
+    width: auto;
+  }
+
+  .col h2 {
+    font-size: 1.2rem;
+  }
+
+  .col p {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+
+  .col img {
+    width: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .titulo-contatos {
+    padding-left: 30px;
+    padding-top: 30px;
+    font-size: 1.7rem;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .titulo-contatos {
+    padding-top: 15px;
+  }
+
+  .horarios {
+    font-size: 1rem;
+  }
+}
