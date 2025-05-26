@@ -133,7 +133,7 @@
 
 .produtos ul li {
   transition: transform 0.4s ease;
-  padding-left: 50px;
+  padding-inline: 10px;
 }
 
 .produtos ul li:hover {
@@ -230,6 +230,24 @@
   width: 300px;
 }
 
+@media (max-width: 950px) {
+  .parceiros {
+    display: flex;
+    overflow-x: auto;
+    max-width: 100%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .parceiros::-webkit-scrollbar {
+    display: none;
+  }
+
+  .parceiros img {
+    width: 150px;
+  }
+}
+
 @media (max-width: 900px) {
   .img-titulo h1,
   .img-titulo h2 {
@@ -256,22 +274,6 @@
     flex: 0 0 auto;
     display: inline-block;
     scroll-snap-align: start;
-  }
-
-  .parceiros {
-    display: flex;
-    overflow-x: auto;
-    max-width: 100%;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-
-  .parceiros::-webkit-scrollbar {
-    display: none;
-  }
-
-  .parceiros img {
-    width: 150px;
   }
 }
 
