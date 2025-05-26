@@ -228,6 +228,7 @@
 
 .parceiros img {
   width: 300px;
+  border-radius: 30px;
 }
 
 @media (max-width: 950px) {
@@ -244,7 +245,7 @@
   }
 
   .parceiros img {
-    width: 150px;
+    width: 300px;
   }
 }
 
@@ -306,7 +307,7 @@
   }
 
   .parceiros img {
-    width: 100px;
+    width: 200px;
   }
 
   .home-parceiros p {
