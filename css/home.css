@@ -228,6 +228,7 @@
 .parceiros img {
   width: 300px;
   border-radius: 30px;
+  padding: 25px;
 }
 
 @media (max-width: 950px) {
