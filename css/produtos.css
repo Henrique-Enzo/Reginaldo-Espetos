@@ -21,6 +21,10 @@
   padding-top: 50px;
 }
 
+#produtos p {
+  font-size: 1rem;
+}
+
 #produtos button[data-button="add"]:hover {
   cursor: pointer;
   background-color: #a30f0f;
@@ -55,11 +59,12 @@ div.ativo .btn-number {
 }
 
 .container h3 {
-  font-size: 0.85rem;
+  font-size: 0.89rem;
   background-color: #eedc8a;
-  padding: 3px 5px 3px 5px;
+  padding: 10px 5px;
   border-radius: 5px;
   color: #8b0000;
+  font-weight: bold;
 }
 
 .preco {
@@ -83,7 +88,7 @@ div.ativo .btn-number {
 
 .btn-number input {
   text-align: center;
-  /* font-weight: bold; */
+  font-weight: bold;
   width: 40px;
   border: 1px solid #000;
   border-radius: 4px;
@@ -114,7 +119,7 @@ div.ativo .btn-number {
 .preco-pacote,
 .preco-kg {
   overflow: hidden;
-  max-height: max-content;
+  max-height: 2000px;
   transition: max-height 0.4s ease;
 }
 
@@ -137,21 +142,20 @@ div.ativo .btn-number {
   transform: rotate(0deg);
 }
 
-.aviso-valores {
-  justify-self: center;
-  padding-top: 0;
-  margin-bottom: 100px;
-}
-
 /* Código de responsividade */
 
 @media (max-width: 1100px) {
   #produtos {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .preco-pacote,
+  .preco-kg {
+    max-height: 6000px;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 630px) {
   #produtos {
     grid-template-columns: 1fr;
   }

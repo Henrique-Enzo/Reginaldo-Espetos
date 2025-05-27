@@ -108,7 +108,7 @@ function recebeDados(div, dados) {
     const novoElemento = document.createElement("li");
     novoElemento.setAttribute("data-id", `${info}`);
     if (isNaN(Number(info))) {
-      novoElemento.innerText = `Porção ${dados.nome} - Pacote c/ ${dados.qtd} Kg(s) - Total: R$${total}`;
+      novoElemento.innerText = `${dados.nome} - ${dados.qtd} Kg(s) - Total: R$${total}`;
     } else {
       novoElemento.innerText = `${dados.nome} - x${dados.qtd} pacote(s) - Total: R$${total}`;
     }
@@ -117,7 +117,7 @@ function recebeDados(div, dados) {
   } else if (elementoExistente) {
     removeProduto(div, dados);
     if (isNaN(Number(info))) {
-      elementoExistente.innerText = `Porção ${dados.nome} - Pacote c/ ${dados.qtd} Kg(s) - Total: R$${total}`;
+      elementoExistente.innerText = `${dados.nome} - ${dados.qtd} Kg(s) - Total: R$${total}`;
     } else {
       elementoExistente.innerText = `${dados.nome} - x${dados.qtd} pacote(s) - Total: R$${total}`;
     }
@@ -213,7 +213,7 @@ function mandaOrcamento(inputNome, inputCheck, divProdutos, form) {
   let mensagem = `Olá, desejo um orçamento! \nMeu nome: *${nomeCliente}* \nForma de entrega: *${valueRetirada}*\nForma de pagamento: *${recebeRadio}*\n\n`;
 
   divProdutos.forEach((div) => {
-    mensagem += `• ${div.textContent}\n`;
+    mensagem += `- ${div.textContent}\n`;
   });
 
   mensagem += `\nTotal dos produtos: *R$${somaTotal.toFixed(2)}*`;
@@ -242,16 +242,6 @@ function salvaNome() {
   });
 }
 salvaNome();
-
-// function abrirWhatsapp() {
-//   const mensagem =
-//     "Olá, vim diretamente do website e desejo fazer um orçamento ou adquirir mais informações!";
-//   const numero = 19993104470;
-
-//   const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
-
-//   window.open(url, "_blank");
-// }
 
 function recalculaTotal() {
   const produtosAtuais = document.querySelectorAll(".produtos-selecionados li");

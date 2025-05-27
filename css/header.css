@@ -33,6 +33,30 @@
   letter-spacing: 1.5;
   font-size: 1.15rem;
   padding-inline: 10px;
+  position: relative;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.15s ease;
+}
+
+/* Seleciona exatamente a logo do nav do header e tira a barra que cria embaixo no hover */
+.menu ul li:nth-child(4) a::after {
+  width: 0;
+}
+
+.menu a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .menu ul li img {
