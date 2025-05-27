@@ -114,7 +114,7 @@ div.ativo .btn-number {
 .preco-pacote,
 .preco-kg {
   overflow: hidden;
-  max-height: max-content;
+  max-height: 2500px;
   transition: max-height 0.4s ease;
 }
 
@@ -149,6 +149,11 @@ div.ativo .btn-number {
   #produtos {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .preco-pacote,
+.preco-kg{
+  max-height: 6000px;
+}
 }
 
 @media (max-width: 600px) {
