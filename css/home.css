@@ -120,6 +120,7 @@
   font-size: 45px;
   color: #8b0000;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .produtos ul {
@@ -153,8 +154,8 @@
 }
 
 .produtos img {
-  width: 200px;
-  height: 170px;
+  width: 300px;
+  height: 200px;
   object-fit: cover;
   margin: 0px;
   padding: 0px;
@@ -164,13 +165,15 @@
 
 .produtos p {
   text-align: center;
-  background-color: #ffe4e1;
+  font-size: 1.15rem;
+  color: #8b0000;
+  font-weight: bold;
+  background-color: #eedc8a;
   margin-top: -10px;
   margin-bottom: 30px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  border-end-end-radius: 5px;
+  padding: 10px;
   border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .home-produtos button {
@@ -185,6 +188,8 @@
   padding: 5px 15px 5px 15px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 200px;
+  margin-top: 50px;
 }
 
 .home-produtos button a {
@@ -231,6 +236,12 @@
   padding: 25px;
 }
 
+@media (max-width: 1300px) {
+  .produtos ul {
+    flex-wrap: wrap;
+  }
+}
+
 @media (max-width: 950px) {
   .parceiros {
     display: flex;
@@ -263,14 +274,6 @@
     border: none !important;
   }
 
-  .produtos ul {
-    overflow-x: auto;
-    white-space: nowrap;
-    scrollbar-width: none;
-    justify-content: start;
-    padding-inline: 10px;
-  }
-
   .produtos ul li {
     flex: 0 0 auto;
     display: inline-block;
@@ -279,6 +282,15 @@
 }
 
 @media (max-width: 650px) {
+  .produtos ul {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    justify-content: start;
+    padding-inline: 10px;
+  }
+
   .title-quem-somos h1,
   .home-produtos h1,
   .home-parceiros h1 {
