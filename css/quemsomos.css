@@ -128,6 +128,10 @@ iframe {
   .img-quem-somos {
     margin-right: 0px;
   }
+
+  .nossa-historia p {
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 650px) {
