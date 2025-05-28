@@ -44,6 +44,10 @@ footer h2 {
   font-size: 1.25rem;
 }
 
+.info-right a:hover {
+  color: #dfc571;
+}
+
 .info-right ul {
   display: flex;
   flex-direction: column;
