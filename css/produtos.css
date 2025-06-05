@@ -148,6 +148,11 @@ div.ativo .btn-number {
   #produtos {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .preco-pacote,
+  .preco-kg {
+    max-height: 6000px;
+  }
 }
 
 @media (max-width: 630px) {
