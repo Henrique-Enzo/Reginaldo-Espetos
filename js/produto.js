@@ -197,7 +197,7 @@ function verificaErro() {
 }
 
 function mandaOrcamento(inputNome, inputCheck, divProdutos, form) {
-  const numero = 19993104470;
+  const numero = 16992328438;
   const nomeCliente = inputNome.value;
   const valueRetirada = inputCheck.value;
   const inputPagamento = document.querySelectorAll(".pagamento input");
